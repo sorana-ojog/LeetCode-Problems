@@ -80,3 +80,9 @@ class Solution:
 #                 mat[i][j] = arr[i]
 #                 i, j = i + 1, j + 1
 #         return mat
+
+
+'''
+Time Complexity: (m+n)*min(m,n)*log(min(m,n)) #I think
+Space Complexity: min(m,n) #I think
+'''

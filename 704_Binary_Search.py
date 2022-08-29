@@ -24,6 +24,6 @@ class Solution:
           
           
 '''
-Time Complexity: log(n)
-Space Complexity: log(n)
+Time Complexity: O(log(n))
+Space Complexity: O(log(n))
 '''

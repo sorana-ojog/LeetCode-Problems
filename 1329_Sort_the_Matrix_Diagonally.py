@@ -83,6 +83,6 @@ class Solution:
 
 
 '''
-Time Complexity: (m+n)*min(m,n)*log(min(m,n)) #I think
-Space Complexity: min(m,n) #I think
+Time Complexity: O((m+n)*min(m,n)*log(min(m,n))) #I think
+Space Complexity: O(min(m,n)) #I think
 '''

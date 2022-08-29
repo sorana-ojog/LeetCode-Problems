@@ -35,6 +35,6 @@ class Solution:
             return self.rec(m, j)
             
 '''
-Time Complexity: log(n)
-Space Complexity: log(n)
+Time Complexity: O(log(n))
+Space Complexity: O(log(n))
 '''

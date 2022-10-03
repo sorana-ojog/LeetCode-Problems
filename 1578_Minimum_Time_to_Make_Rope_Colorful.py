@@ -34,5 +34,7 @@ class Solution:
         
 '''
 Time Complexity: O(n)
-Space Complexity: O(1) #I think
+Space Complexity: O(n^2)
+#I think it is possibly O(n^2) because I am adding a character at the end of the string and strings are immutable
+REF: https://dock2learn.com/tech/how-to-efficiently-concatenate-strings-in-python/
 '''

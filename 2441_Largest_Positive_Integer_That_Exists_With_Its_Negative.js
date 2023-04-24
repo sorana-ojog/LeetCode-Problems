@@ -5,6 +5,9 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+//Method 1: with lower space complexity (sorting the numbers)
+
 var findMaxK = function(nums) {
     nums.sort((a, b) => a - b);
     var i = 0;
@@ -24,3 +27,27 @@ var findMaxK = function(nums) {
 
 // Time Complexity: O(n*log(n)) - taking into consideration that the JS sort method is O(n*log(n))
 // Space Complexity: O(1)
+
+
+
+//Method 2: with lower time complexity (implementing a hash table)
+
+var findMaxK = function(nums) {
+    var table = {}
+    var max = 0;
+    for ( let i = 0; i < nums.length; i++){
+        table[nums[i]] = nums[i]
+        if (table[nums[i] * (-1)] !== undefined){
+            if (max < Math.abs(nums[i])){
+                max = Math.abs(nums[i])
+            }
+        }
+    }
+    if (max === 0){
+        return -1
+    }
+    return max;
+};
+
+// Time Complexity: O(n) - n* O(1) for every lookup into the table
+// Space Complexity: O(n) - n* O(1) for every addition into the hash table
